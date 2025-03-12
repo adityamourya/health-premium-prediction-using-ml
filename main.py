@@ -25,7 +25,8 @@ set_background("background.jpg")  # Change the filename if needed
 #
 
 # Define the page layout
-st.title('Health Insurance Cost Predictor')
+#st.title('Health Insurance Cost Predictor')
+st.markdown("<h1 style='color: black;'>Health Insurance Cost Predictor</h1>", unsafe_allow_html=True)
 
 categorical_options = {
     'Gender': ['Male', 'Female'],
@@ -49,6 +50,25 @@ row3 = st.columns(3)
 row4 = st.columns(3)
 
 # Assign inputs to the grid
+st.markdown(
+    """
+    <style>
+    label, .stSelectbox label, .stNumberInput label {
+        color: black !important;
+        font-weight: bold;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Define row layout (assuming you're using st.columns)
+row1 = st.columns(3)
+row2 = st.columns(3)
+row3 = st.columns(3)
+row4 = st.columns(3)
+
+# Your existing input elements
 with row1[0]:
     age = st.number_input('Age', min_value=18, step=1, max_value=100)
 with row1[1]:
