@@ -21,7 +21,7 @@ def set_background(image_file):
     )
 
 # Apply Background (Make sure the image file exists)
-set_background("app/image.jpg")  # Change the filename if needed
+set_background("image.jpg")  # Change the filename if needed
 #
 
 # Define the page layout
