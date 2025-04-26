@@ -44,10 +44,10 @@ categorical_options = {
 }
 
 # Create four rows of three columns each
-row1 = st.columns(3)
-row2 = st.columns(3)
-row3 = st.columns(3)
-row4 = st.columns(3)
+#row1 = st.columns(3)
+#row2 = st.columns(3)
+#row3 = st.columns(3)
+#row4 = st.columns(3)
 
 # Assign inputs to the grid
 st.markdown(
